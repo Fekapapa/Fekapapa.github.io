@@ -1,15 +1,81 @@
 <!doctype html>
+<!-- made by Ferenc Hartmann 2017 -->
 <html lang="en">
     <head>
-        <title>Ferenc Hartmann's site</title>
+        <title>Ferenc Hartmann website</title>
         <meta charset="utf-8">
-        <link rel="stylesheet"
-        href="style.css">
+        <link rel="stylesheet" href="indexstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
+
     </head>
     <body>
-        <div class="line1">Website</div>
-        <div class="line2">Under Construction</div>
-        <div class="comment">Please visit my website after the 1st of May</div>
+        <div class="menubar">
+            <div class="menucontainer">
+                <a class="logocontainer" href="index.html">
+                    <div class="logo1">
+                        <div>F</div>
+                        <div>H</div>
+                    </div>
+                    <div class="logo2">
+                        <div>w</div>
+                        <div>e</div>
+                        <div>b</div>
+                    </div>
+                </a>
+                <ul class="topcontainer">
+                    <li><a href="index.html" class="navigation2">home</a></li>
+                    <li><a href="codesnippets.html" class="navigation2">code snippets</a></li>
+                    <li><a href="projects.html" class="navigation2">projects</a></li>
+                    <li><a href="aboutme.html" class="navigation2">about</a></li>
+                    <li><a href="#contactheader" class="navigation2">contact</a></li>
+                </ul>
+            </div>
+            <div class="head1">Get a website that looks beautiful and works as you wish.</div>
+            <div class="head2">You dream it, I create it</div>
+            <div class="buttoncontainer">
+                <a href="codesnippets.html" class="button1">code snippets</a>
+                <a href="projects.html" class="button2">projects</a>
+            </div>
+        </div>
+        <div class="video" id="toppage">
+            <video playsinline autoplay muted loop poster="videostart.jpg" id="bgvid">
+            <source src="videoplayback.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="quotation">Ferenc Hartmann fullstack webdeveloper's page.</div>
+        <div id="contactheader"></div>
+        <div class="contactbackground">
+            <h1 class="contactheader">contact</h1>
+            <form name="contactform" method="post" action="mailto:ferenc.hartmann@gmail.com" enctype="text/plain">
+                <br>
+                <div class="contactcontainer">
+                    <input type="text" name="name" placeholder="Név" class="standardinput" required><br>  <br>
+                    <input type="text" name="mail" placeholder="Email" class="standardinput" required><br>
+                    <br>
+                    <textarea type="text" name="comment" placeholder="Üzenet" rows="6" class="standardinput" required></textarea><br><br>
+                    <input type="submit" value="Küldés" class="submit">
+                </div>
+            </form>
+        </div>
+        <footer>Copyright © 2017 - Ferenc Hartmann</footer>
     </body>
 </html>
