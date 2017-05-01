@@ -183,7 +183,7 @@ video#bgvid {
 }
 
 .contactbackground {
-    background-image: url("images/contactimage.jpg");
+    background-image: url("contactimage.jpg");
     width: 100%;
     height: 615px;
     background-position: top left;
