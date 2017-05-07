@@ -291,8 +291,8 @@ footer {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-
 }
+
 .resumeskilllabelbox {
     margin: auto;
     margin: 0px;
@@ -323,4 +323,54 @@ footer {
     width: 20%;
     height: 20px;
     background-color: red;
+}
+
+.resumeskillcirclerowcontainer {
+    margin-bottom: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resumeskillcirclecontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeskillcircle {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.resumeskilcircletext {
+    color: gray;
+    text-align: center;
+}
+
+.papucs {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mandula {
+    min-width: 30%;
+    text-transform: uppercase;
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.alma {
+    color: gray;
+    line-height: 2em;
+}
+
+.alma2 {
+    padding-left: 20px;
+    color: gray;
+    line-height: 2em;
 }
