@@ -169,7 +169,7 @@ footer {
     padding-top: 150px;
 }
 
-.mainbox {
+.resumemainbox {
     position: relative;
     margin: auto;
     padding-top: 50px;
@@ -180,7 +180,7 @@ footer {
     z-index: -5;
 }
 
-.headerbox {
+.resumeheaderbox {
     position: relative;
     margin: auto;
     width: 80%;
@@ -191,12 +191,12 @@ footer {
     justify-content: space-between;
 }
 
-.headerboxleft {
+.resumeheaderboxleft {
     margin: 25px 0px 25px 25px;
     width: 35%;
 }
 
-.headerboxright {
+.resumeheaderboxright {
     margin: 25px;
     width: 65%;
     background-color: grey;
@@ -245,4 +245,82 @@ footer {
     color: red;
     display: flex;
     justify-content: space-between;
+}
+
+.resumesectionheader {
+    padding: 50px 0px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resumemidbox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumeskillsleftbox {
+    padding: 20px;
+    min-width: 33%;
+    height: 250px;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.resumeskillsrightbox {
+    padding: 20px;
+    min-width: 53%;
+    height: 250px;
+    border-style: solid;
+}
+
+.resumeskillcontainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.resumeskilllabelbox {
+    margin: auto;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumeskillabeltext {
+    color: gray;
+}
+
+.resumeskillbarbox {
+    margin: auto;
+    margin: 0px;
+    min-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumeskillbarleft {
+    width: 80%;
+    height: 20px;
+    background-color: yellow;
+}
+
+.resumeskillbarright {
+    width: 20%;
+    height: 20px;
+    background-color: red;
 }
