@@ -169,18 +169,18 @@ footer {
     padding-top: 150px;
 }
 
-.resumemainbox {
+.resume {
     position: relative;
     margin: auto;
     padding-top: 50px;
     width: 90%;
-    height: 1000px;
     border-style: solid;
     border-width: 1px;
     z-index: -5;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.resumeheaderbox {
+.resume .headerbox {
     position: relative;
     margin: auto;
     width: 80%;
@@ -189,20 +189,24 @@ footer {
     border-width: 1px;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.resumeheaderboxleft {
+.resume .headerbox .left {
     margin: 25px 0px 25px 25px;
     width: 35%;
 }
 
-.resumeheaderboxright {
+.resume .headerbox .right {
     margin: 25px;
     width: 65%;
-    background-color: grey;
 }
 
-.resumeimageholder {
+.resume .headerbox .right .header {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.resume .headerbox .left .imageholder {
     max-width:100%;
     height: 100%;
     background-image: url(me.png);
@@ -213,41 +217,62 @@ footer {
     border-radius: 10%;
 }
 
-.resumeheader{
+.resume .headerbox .right .header{
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
 }
 
-.resumeagecontainer {
+.resume .headerbox .right .headerfoot{
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+
+.resume .headerbox .right .headertext{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.resume .headerbox .right .agecontainer {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.resumeageleftbox {
+.resume .headerbox .right .agecontainer .leftbox {
     min-width: 45%;
-    text-transform: uppercase;
-    color: red;
     display: flex;
     justify-content: space-between;
+    line-height: 2em;
 }
 
-.resumeageleftfirstbox {
-    max-width: 30%;
+.resume .headerbox .right .agecontainer .leftbox .firstbox {
+    width: 30%;
+    color: grey;
 }
 
-.resumeageleftsecondbox {
-    max-width: 60%;
+.resume .headerbox .right .agecontainer .leftbox .secondbox {
+    width: 70%;
 }
 
-.resumeagerightbox {
+.resume .headerbox .right .agecontainer .rightbox {
     min-width: 45%;
-    text-transform: uppercase;
-    color: red;
+    color: black;
     display: flex;
     justify-content: space-between;
+    line-height: 2em;
 }
 
-.resumesectionheader {
+.resume .headerbox .right .agecontainer .rightbox .firstbox {
+    width: 30%;
+    color: grey;
+}
+
+.resume .headerbox .right .agecontainer .rightbox .secondbox {
+    width: 70%;
+}
+
+.resume .sectionheader {
     padding: 50px 0px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -257,55 +282,85 @@ footer {
     text-align: center;
 }
 
-.resumemidbox {
+.resume .midbox {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin: auto;
     width: 80%;
-    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .midbox .leftbox {
+    padding: 20px;
+    min-width: 33%;
+    height: 280px;
     border-style: solid;
     border-width: 1px;
     display: flex;
     justify-content: space-between;
-}
-
-.resumeskillsleftbox {
-    padding: 20px;
-    min-width: 33%;
-    height: 250px;
-    border-style: solid;
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    background-color: white;
 }
 
-.resumeskillsrightbox {
+.resume .midbox .leftbox .labelholder {
+    margin-left: 4.5%;
+    width: 24%;
+    min-width: 190px;
+    height: 50px;
+    line-height: 50px;
+    top: -30px;
+    background-color: rgba(100, 100, 100, 1);
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.resume .midbox .rightbox  {
     padding: 20px;
     min-width: 53%;
-    height: 250px;
+    height: 280px;
     border-style: solid;
+    border-width: 1px;
+    background-color: white;
 }
 
-.resumeskillcontainer {
+.resume .midbox .rightbox .labelholder {
+    margin-left: 16%;
+    width: 23%;
+    min-width: 190px;
+    height: 50px;
+    line-height: 50px;
+    top: -30px;
+    background-color: rgba(100, 100, 100, 1);
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.resume .midbox .leftbox .skillcontainer {
+    margin-top: 20px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.resumeskilllabelbox {
+.resume .midbox .leftbox .skillcontainer .labelbox {
     margin: auto;
-    margin: 0px;
+    margin: 0 0 5px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.resumeskillabeltext {
+.resume .midbox .leftbox .skillcontainer .labelbox .labeltext {
     color: gray;
 }
 
-.resumeskillbarbox {
+.resume .midbox .leftbox .skillcontainer .barbox {
     margin: auto;
     margin: 0px;
     min-width: 90%;
@@ -313,64 +368,169 @@ footer {
     justify-content: space-between;
 }
 
-.resumeskillbarleft {
-    width: 80%;
+.resume .midbox .leftbox .skillcontainer .barbox .barleft {
+    width: 75%;
     height: 20px;
-    background-color: yellow;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow:
+    inset 0 0 10px #000000,
+    0 0 5px #000000;
+    border-radius: 5px 0 0 5px;
 }
 
-.resumeskillbarright {
-    width: 20%;
+.resume .midbox .leftbox .skillcontainer .barbox .barright {
+    width: 25%;
     height: 20px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px #000000;
+    border-radius: 0 5px 5px 0;
 }
 
-.resumeskillcirclerowcontainer {
+.resume .midbox .leftbox .skillcontainer .barbox .barleft.second {
+    width: 60%;
+}
+
+.resume .midbox .leftbox .skillcontainer .barbox .barright.second {
+    width: 40%;
+}
+
+.resume .midbox .leftbox .skillcontainer .barbox .barleft.third {
+    width: 30%;
+}
+
+.resume .midbox .leftbox .skillcontainer .barbox .barright.third {
+    width: 70%;
+}
+
+.resume .midbox .leftbox .skillcontainer .barbox .barleft.fourth {
+    width: 50%;
+}
+
+.resume .midbox .leftbox .skillcontainer .barbox .barright.fourth {
+    width: 50%;
+}
+
+.resume .midbox .rightbox .circlerow {
+    margin-top: 20px;
     margin-bottom: 20px;
     max-width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.resumeskillcirclecontainer {
+.resume .midbox .rightbox .circlerow .circlecontainer {
     display: flex;
     flex-direction: column;
 }
 
-.resumeskillcircle {
+.resume .midbox .rightbox .circlerow .circlecontainer .circle {
     margin-bottom: 10px;
     width: 100px;
     height: 100px;
-    background-color: brown;
+    background-color: rgba(150, 150, 150, 0.5);
     border-radius: 50%;
+    box-shadow:
+    inset 0 0 10px #000000;
 }
 
-.resumeskilcircletext {
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innercircle {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow:
+    0 0 10px #000000;
+}
+
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+}
+
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.first {
+}
+
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.second {
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 50px;
+}
+
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.third {
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 40px;
+}
+
+.resume .midbox .rightbox .circlerow .circlecontainer .circletext {
     color: gray;
     text-align: center;
 }
 
-.papucs {
+.resume .midbox .rightbox .secondaryskills {
     max-width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.mandula {
+.resume .midbox .rightbox .secondaryskills .leftside {
     min-width: 30%;
-    text-transform: uppercase;
     color: red;
     display: flex;
     justify-content: flex-start;
 }
 
-.alma {
+.resume .midbox .rightbox .secondaryskills .icons {
     color: gray;
     line-height: 2em;
 }
 
-.alma2 {
-    padding-left: 20px;
+.resume .midbox .rightbox .secondaryskills .texts {
+    padding-left: 10px;
     color: gray;
     line-height: 2em;
+}
+
+.resume .bottombox {
+    margin: auto;
+    margin-top: 25px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resume .bottombox .educationbox {
+    margin-bottom: 50px;
+    padding: 0px 20px 20px 20px;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.resume .bottombox .educationbox .labelholder {
+    margin: auto;
+    padding: 0px 10%;
+    width: 33%;
+    min-width: 100px;
+    height: 50px;
+    line-height: 50px;
+    top: -30px;
+    background-color: rgba(100, 100, 100, 1);
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
 }
