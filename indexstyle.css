@@ -47,7 +47,7 @@ video#bgvid {
 
 .logocontainer {
     margin-left: 100px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 10px;
     padding: 5px 10px 5px 10px;
     border-color: white;
@@ -81,7 +81,7 @@ video#bgvid {
 .topcontainer {
     margin-left: 100px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -218,7 +218,7 @@ form {
     width: 40%;
     border: 1px solid;
     border-color: rgb(100, 100, 100);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 textarea {
@@ -235,12 +235,12 @@ textarea {
     width: 41%;
     border: 1px solid;
     border-color: rgb(100, 100, 100);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .submit:hover {
     color: black;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     transition: 0.3s;
 }
 
