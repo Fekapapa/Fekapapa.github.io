@@ -29,8 +29,8 @@ a {
 
 .logocontainer {
     margin-left: 100px;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 5px 10px 5px 10px;
     border-color: white;
     border-style: solid;
@@ -100,7 +100,7 @@ a {
 .topcontainer {
     margin-left: 100px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -126,6 +126,10 @@ footer {
     background-color: black;
     color: white;
     font-size: 12px;
+}
+
+.resumefooter {
+    margin-top: 100px;
 }
 
 .backtomaincontainer {
@@ -174,22 +178,21 @@ footer {
     margin: auto;
     padding-top: 50px;
     width: 90%;
-    border-style: solid;
-    border-width: 1px;
-    z-index: -5;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.33);
+    font-family: 'Calibri','Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 .resume .headerbox {
     position: relative;
     margin: auto;
     width: 80%;
-    height: 400px;
-    border-style: solid;
-    border-width: 1px;
+    min-height: 400px;
     display: flex;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.33);
 }
 
 .resume .headerbox .left {
@@ -202,39 +205,46 @@ footer {
     width: 65%;
 }
 
-.resume .headerbox .right .header {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .resume .headerbox .left .imageholder {
-    max-width:100%;
-    height: 100%;
+    margin: auto;
+    max-width:80%;
+    height: 80%;
+    left: -25px;
     background-image: url(me.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    left: -25px;
-    border-radius: 10%;
+    border-radius: 3px;
+}
+
+.resume .headerbox .left .download {
+    margin: auto;
+    margin-top: 5%;
+    max-width:80%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
 }
 
 .resume .headerbox .right .header{
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
 }
 
-.resume .headerbox .right .headerfoot{
-    font-family: 'Open Sans', sans-serif;
-    color: grey;
-}
 
 .resume .headerbox .right .headertext{
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.5em;
     text-align: justify;
 }
 
 .resume .headerbox .right .agecontainer {
     margin-top: 50px;
+    min-width: 480px;
     display: flex;
     justify-content: space-between;
 }
@@ -248,11 +258,13 @@ footer {
 
 .resume .headerbox .right .agecontainer .leftbox .firstbox {
     width: 30%;
-    color: grey;
+    min-width: 50px;
+    font-weight: bold;
 }
 
 .resume .headerbox .right .agecontainer .leftbox .secondbox {
     width: 70%;
+    min-width: 180px;
 }
 
 .resume .headerbox .right .agecontainer .rightbox {
@@ -265,21 +277,36 @@ footer {
 
 .resume .headerbox .right .agecontainer .rightbox .firstbox {
     width: 30%;
-    color: grey;
+    min-width: 50px;
+    font-weight: bold;
 }
 
 .resume .headerbox .right .agecontainer .rightbox .secondbox {
     width: 70%;
+    min-width: 180px;
 }
 
 .resume .sectionheader {
     padding: 50px 0px;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    color: grey;
-    font-size: 36px;
+    color: white;
+    font-size: 46px;
     font-weight: bold;
+    font-family: 'Calibri','Open Sans', sans-serif;
     text-align: center;
+    text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,0.1),
+    0 0 5px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,0.3),
+    0 3px 5px rgba(0,0,0,0.2),
+    0 5px 10px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.2),
+    0 20px 20px rgba(0,0,0,0.15);
 }
 
 .resume .midbox {
@@ -296,12 +323,11 @@ footer {
     padding: 20px;
     min-width: 33%;
     height: 280px;
-    border-style: solid;
-    border-width: 1px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.33);
 }
 
 .resume .midbox .leftbox .labelholder {
@@ -311,7 +337,7 @@ footer {
     height: 50px;
     line-height: 50px;
     top: -30px;
-    background-color: rgba(100, 100, 100, 1);
+    background-color: rgba(25, 25, 25, 1);
     position: absolute;
     text-transform: uppercase;
     text-align: center;
@@ -322,9 +348,8 @@ footer {
     padding: 20px;
     min-width: 53%;
     height: 280px;
-    border-style: solid;
-    border-width: 1px;
     background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.33);
 }
 
 .resume .midbox .rightbox .labelholder {
@@ -334,7 +359,7 @@ footer {
     height: 50px;
     line-height: 50px;
     top: -30px;
-    background-color: rgba(100, 100, 100, 1);
+    background-color: rgba(25, 25, 25, 1);
     position: absolute;
     text-transform: uppercase;
     text-align: center;
@@ -356,10 +381,6 @@ footer {
     justify-content: space-between;
 }
 
-.resume .midbox .leftbox .skillcontainer .labelbox .labeltext {
-    color: gray;
-}
-
 .resume .midbox .leftbox .skillcontainer .barbox {
     margin: auto;
     margin: 0px;
@@ -374,15 +395,15 @@ footer {
     background-color: rgba(255, 255, 255, 1);
     box-shadow:
     inset 0 0 10px #000000,
-    0 0 5px #000000;
+    0 0 3px #000000;
     border-radius: 5px 0 0 5px;
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barright {
     width: 25%;
     height: 20px;
-    background-color: rgba(0, 0, 0, 1);
-    box-shadow: 0 0 5px #000000;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 3px #000000;
     border-radius: 0 5px 5px 0;
 }
 
@@ -427,10 +448,17 @@ footer {
     margin-bottom: 10px;
     width: 100px;
     height: 100px;
-    background-color: rgba(150, 150, 150, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 50%;
     box-shadow:
-    inset 0 0 10px #000000;
+    inset 0 0 3px white;
+}
+
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innercircle .percentage{
+    position: absolute;
+    top: 32px;
+    left: 27px;
+    font-weight: bold;
 }
 
 .resume .midbox .rightbox .circlerow .circlecontainer .circle .innercircle {
@@ -443,37 +471,51 @@ footer {
     background-color: white;
     border-radius: 50%;
     box-shadow:
-    0 0 10px #000000;
+    0 0 3px white;
 }
 
 .resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare {
     position: relative;
     top: -20px;
     left: -20px;
-    width: 70px;
-    height: 40px;
+    width: 60px;
+    height: 25px;
     background-color: white;
 }
 
-.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.first {
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.first.rotated {
+    position: absolute;
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    transform: rotate(40deg)
 }
 
 .resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.second {
     top: -10px;
     left: -10px;
-    width: 60px;
+    width: 50px;
     height: 50px;
 }
 
 .resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.third {
     top: -10px;
-    left: -10px;
-    width: 60px;
-    height: 40px;
+    left: 20px;
+    width: 20px;
+    height: 15px;
 }
 
+.resume .midbox .rightbox .circlerow .circlecontainer .circle .innersquare.third.rotated {
+    position: absolute;
+    top: -15px;
+    width: 40px;
+    left: 0px;
+    transform: rotate(55deg)
+}
+
+
 .resume .midbox .rightbox .circlerow .circlecontainer .circletext {
-    color: gray;
     text-align: center;
 }
 
@@ -485,19 +527,29 @@ footer {
 
 .resume .midbox .rightbox .secondaryskills .leftside {
     min-width: 30%;
-    color: red;
     display: flex;
     justify-content: flex-start;
 }
 
 .resume .midbox .rightbox .secondaryskills .icons {
-    color: gray;
     line-height: 2em;
 }
 
+ .resume .midbox .rightbox .secondaryskills .icons .imageholder {
+     margin-top: 14px;
+     min-width: 20px;
+     min-height: 20px;
+     background-image: url(pipe.png);
+     background-position: top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     line-height: 2em;
+     position: relative;
+     top: -5px;
+ }
+
 .resume .midbox .rightbox .secondaryskills .texts {
     padding-left: 10px;
-    color: gray;
     line-height: 2em;
 }
 
@@ -513,11 +565,10 @@ footer {
     margin-bottom: 50px;
     padding: 0px 20px 20px 20px;
     width: 25%;
-    border-style: solid;
-    border-width: 1px;
     background-color: white;
     text-align: justify;
     line-height: 1.4em;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.33);
 }
 
 .resume .bottombox .educationbox .labelholder {
@@ -528,7 +579,7 @@ footer {
     height: 50px;
     line-height: 50px;
     top: -30px;
-    background-color: rgba(100, 100, 100, 1);
+    background-color: rgba(25, 25, 25, 1);
     position: relative;
     text-transform: uppercase;
     text-align: center;
