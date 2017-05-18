@@ -187,6 +187,8 @@ video#bgvid {
     width: 100%;
     height: 615px;
     background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contactheader {
@@ -218,7 +220,7 @@ form {
     width: 40%;
     border: 1px solid;
     border-color: rgb(100, 100, 100);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 textarea {
@@ -231,16 +233,16 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 35px;
-    color: #666666;
+    color: black;
     width: 41%;
     border: 1px solid;
     border-color: rgb(100, 100, 100);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .submit:hover {
     color: black;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
     transition: 0.3s;
 }
 
