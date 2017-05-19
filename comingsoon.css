@@ -219,8 +219,9 @@ footer {
 
 .resume .headerbox .left .download {
     margin: auto;
-    margin-top: 5%;
-    max-width:80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    min-width: 80%;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.9);
     border-style: solid;
@@ -229,6 +230,7 @@ footer {
     text-align: center;
     line-height: 50px;
     color: white;
+    display: inline-block;
 }
 
 .resume .headerbox .right .header{
