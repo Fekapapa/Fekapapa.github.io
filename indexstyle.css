@@ -427,7 +427,7 @@ input[type=checkbox] {
         position: absolute;
         top: -52px;
         transform: translateY(-240px);
-        transition: 1s ease-in-out, z-index;
+        transition: 0.5s ease-in-out, z-index;
         right: 0px;
         z-index: 1;
     }
@@ -470,6 +470,10 @@ label a {
     transition: 0.5s;
 }
 
+.highlightedDrop {
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     label.dropMenu, .highlightedDrop {
         display: inherit;
@@ -489,15 +493,14 @@ label a {
         border-width: 2px;
         border-radius: 50%;
     }
-}
-
-.highlightedDrop {
-    position: relative;
-    padding: 3px 5px;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 0%;
+    .highlightedDrop {
+        position: relative;
+        padding: 5px 5px;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 0%;
+    }
 }
 
 .highlightedDrop:hover {
