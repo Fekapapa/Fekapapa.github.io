@@ -43,13 +43,30 @@
                                 <div>b</div>
                             </div>
                         </a>
-                        <ul class="topcontainer">
-                            <li><a href="index.html" class="navigation">home</a></li>
-                            <li><a href="codesnippets.html" class="navigation2">code snippets</a></li>
-                            <li><a href="comingsoon.html" class="navigation2">projects</a></li>
-                            <li><a href="resume.html" class="navigation2">resume</a></li>
-                            <li><a href="#contactheader" class="navigation2">contact</a></li>
+                        <div class="topcontainer">
+                            <a href="index.html" class="navigation">home</a>
+                            <a href="codesnippets.html" class="navigation2">code snippets</a>
+                            <a href="comingsoon.html" class="navigation2">projects</a>
+                            <a href="resume.html" class="navigation2">resume</a>
+                            <a href="#contactheader" class="navigation2">contact</a>
+                        </div>
+
+                        <input type="checkbox" id="toggle">
+                        <label for="toggle" class="hambrugerMenu">
+                          <div class="menuIcon first"></div>
+                          <div class="menuIconContainer">
+                              <div class="menuIcon second"></div>
+                          </div>
+                          <div class="menuIcon third"></div>
+                        </label>
+                        <ul class="dropDown">
+                            <li><label for="toggle" #dropLink [routerLink]="['/']" class="dropMenu highlightedDrop">Home</label></li>
+                            <li><label for="toggle" #dropLink [routerLink]="['/hotel/overview']" class="dropMenu">Rooms & Suites</label></li>
+                            <li><label for="toggle" #dropLink [routerLink]="['reservation']" class="dropMenu">Reservation</label></li>
+                            <li><label for="toggle" #dropLink href="index.html" class="dropMenu">Activites</label></li>
+                            <li><label for="toggle" #dropLink href="index.html" class="dropMenu">Contact</label></li>
                         </ul>
+
                     </div>
                     <div class="head1">Get a website that looks beautiful and works as you wish.</div>
                     <div class="head2">You dream it, I create it</div>
