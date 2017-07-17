@@ -29,18 +29,12 @@ a {
 
 video#bgvid {
     position: relative;
-    /*top: 75%;
-    left: 50%;*/
     min-width: 100%;
     max-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
-    /*-ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);*/
     background: url(videostart.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -460,6 +454,7 @@ label.dropMenu {
         font-weight: bold;
         letter-spacing: 3px;
         color: white;
+        text-transform: uppercase;
     }
 }
 
@@ -483,4 +478,12 @@ input[type=checkbox]:checked ~ .dropDown {
     border-style: solid;
     border-width: 2px;
     border-radius: 0%;
+}
+
+label a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;    
 }
