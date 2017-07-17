@@ -207,11 +207,11 @@ footer {
 
 .resume .headerbox .left .imageholder {
     margin: auto;
-    max-width:80%;
+    max-width: 80%;
     height: 80%;
     left: -25px;
     background-image: url(me.png);
-    background-size: cover;
+    background-size: 250px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 3px;
