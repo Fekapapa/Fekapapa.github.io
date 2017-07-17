@@ -170,6 +170,7 @@ footer {
     margin: auto;
     padding-top: 50px;
     width: 90%;
+    min-width: 725px;
     background-color: rgba(0, 0, 0, 0.05);
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 5px 12px rgba(0,0,0,0.33);
     font-family: 'Calibri','Open Sans', sans-serif;
@@ -243,6 +244,13 @@ footer {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1300px) {
+    .resume .headerbox .right .agecontainer {
+        min-width: 200px;
+    }
+
+}
+
 .resume .headerbox .right .agecontainer .leftbox {
     min-width: 45%;
     display: flex;
@@ -261,6 +269,17 @@ footer {
     min-width: 180px;
 }
 
+@media screen and (max-width: 1300px) {
+    .resume .headerbox .right .agecontainer .leftbox .secondbox {
+        width: auto;
+        min-width: 0px;
+    }
+
+    .resume .headerbox .right .agecontainer .leftbox .secondbox p {
+        word-wrap: break-word;
+    }
+}
+
 .resume .headerbox .right .agecontainer .rightbox {
     min-width: 45%;
     color: black;
@@ -275,9 +294,47 @@ footer {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1300px) {
+    .resume .headerbox .right .agecontainer .rightbox .firstbox {
+        min-width: 65px;
+    }
+}
+
 .resume .headerbox .right .agecontainer .rightbox .secondbox {
     width: 70%;
     min-width: 180px;
+}
+
+@media screen and (max-width: 1300px) {
+    .resume .headerbox .right .agecontainer .rightbox .secondbox {
+        width: auto;
+        min-width: 0px;
+    }
+
+    .resume .headerbox .right .agecontainer .rightbox .secondbox p {
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .websiteHolder {
+        position: relative;
+        top: 36px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .websiteHolder {
+        position: relative;
+        top: 72px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .websiteHolder {
+        position: relative;
+        top: 108px;
+    }
 }
 
 .resume .sectionheader {
@@ -344,6 +401,18 @@ footer {
     height: 280px;
     background-color: white;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 5px 12px rgba(0,0,0,0.33);
+}
+
+@media screen and (max-width: 920px) {
+    .resume .midbox .rightbox, .resume .midbox .leftbox {
+        height: 316px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .resume .midbox .rightbox, .resume .midbox .leftbox {
+        height: 352px;
+    }
 }
 
 .resume .midbox .rightbox .labelholder {
