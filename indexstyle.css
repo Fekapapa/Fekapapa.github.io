@@ -89,7 +89,7 @@ video#bgvid {
     flex-wrap: wrap;
 }
 
-.navigation2 {
+.navigation, .navigation2 {
     margin-left: 40px;
     padding: 10px 10px;
     width: 120px;
@@ -110,6 +110,19 @@ video#bgvid {
     border-style: solid;
     border-width: 2px;
     border-radius: 0%;
+    transition: 0.5s;
+}
+
+.navigation {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0%;
+}
+
+.navigation:hover {
+    color: black;
+    background-color: white;
     transition: 0.5s;
 }
 
@@ -255,4 +268,17 @@ footer {
     background-color: black;
     color: white;
     font-size: 12px;
+}
+
+.stickyFooterBox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.whiteBoard {
+    min-width: 100%;
+    min-height: calc(100vh - 1335px);
+    background-color: white;
 }
