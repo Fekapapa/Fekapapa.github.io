@@ -46,6 +46,29 @@ video#bgvid {
     overflow: hidden;
 }
 
+@media screen and (max-width: 905px) {
+    video#bgvid {
+        display: none;
+    }
+
+    .video {
+        position: relative;
+        background: url(videostart.jpg) no-repeat;
+        background-size: cover;
+        z-index: -100;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .video {
+        height: 420px;
+        background: url(videostart.jpg) no-repeat;
+    }
+    .menubar {
+        height: 420px;
+    }
+}
+
 .logocontainer {
     margin-left: 100px;
     margin-top: 15px;
@@ -169,7 +192,7 @@ video#bgvid {
     color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 710px) {
     .head2{
         font-size: 24px;
     }
@@ -401,15 +424,15 @@ input[type=checkbox] {
     .dropDown {
         padding: 0;
         width: 100%;
-        height: 235px;
+        height: 260px;
         background: rgba(0, 0, 0, 1);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         position: absolute;
-        top: -50px;
-        transform: translateY(-190px);
+        top: -52px;
+        transform: translateY(-210px);
         transition: 1s ease-in-out, z-index;
         right: 0px;
         z-index: 1;
@@ -418,7 +441,7 @@ input[type=checkbox] {
 
 .dropDown li {
     position: relative;
-    top: 75px;
+    top: 95px;
 }
 
 label.dropMenu {
@@ -441,7 +464,7 @@ label.dropMenu {
 }
 
 input[type=checkbox]:checked ~ .dropDown {
-    transform: translateY(52px);
+    transform: translateY(53px);
     transition: 0.5s ease-in-out, z-index;
     display: flex;
     right: 0px;
