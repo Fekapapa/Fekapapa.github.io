@@ -593,12 +593,12 @@ label a {
         border-radius: 50%;
     }
     .highlightedDrop {
-        position: relative;
         padding: 5px 5px;
         border-color: white;
         border-style: solid;
         border-width: 2px;
         border-radius: 0%;
+        position: relative;
     }
 }
 
