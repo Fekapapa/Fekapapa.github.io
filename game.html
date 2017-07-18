@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Map draw</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="animation1.css">
+    <link rel="stylesheet" href="animation2.css">
+    <link rel="stylesheet" href="gamestyle.css">
+    <link rel="stylesheet" href="redvectocid.css">
+    <link rel="stylesheet" href="bluevectocid.css">
+    <link rel="stylesheet" href="greenvectocid.css">
+    <link rel="stylesheet" href="purplevectocid.css">
+    <link rel="stylesheet" href="greyvectocid.css">
+    <link rel="stylesheet" href="yellowvectocid.css">
+    <link rel="stylesheet" href="top_box.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+    <div id="coordinates" class="gameConatiner">
+        <div class="leftContainer">
+            <div class="topBoxContainer">
+                <div class="topBox">
+                    <div class="topBox_left">
+                        <div class="text_container_shadow">
+                            <p class="company_name1">golden</p>
+                            <p class="company_name2">code</p>
+                        </div>
+                        <div class="text_container">
+                            <p class="company_name1">golden</p>
+                            <p class="company_name2">code</p>
+                        </div>
+                    </div>
+                    <div class="topBox_middle">
+                        <button class="next_wave" onclick="MassVectocid.nextWave()">Next Wave</button>
+                    </div>
+                    <div class="topBox_right">
+                        <div class="stat_left">
+                            <div class="stat_left_one">
+                                    <p>BANK</p><p class="data">0</p>
+                            </div>
+                            <div class="stat_left_two">
+                                    <p>INTEREST</p><p class="data">0</p>
+                            </div>
+                            <div class="stat_left_three">
+                                    <p>SCORE</p><p class="data">870</p>
+                            </div>
+                        </div>
+                        <div class="stat_right">
+                            <div class="stat_right_one">
+                                    <p>LIVES</p><p class="data">120</p>
+                            </div>
+                            <div class="stat_right_two">
+                                    <p>LEVEL</p><p class="data">0</p>
+                            </div>
+                            <div class="stat_right_three">
+                                    <p>BONUS</p><p class="data">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapContainer"></div>
+        </div>
+        <div class="rightContainer">
+            <div class="firstBox">
+                <div class="header">Towers</div>
+                <div class="towerBox">
+                    <div onclick="TowerCreator.hoverTower('g1')" class="greenLaser1">
+                        <div class="innerLaser"></div>
+                        <div class="innerLaserLine"></div>
+                    </div>
+                    <div class="greenLaser2"></div>
+                    <div class="greenLaser3"></div>
+                    <div class="damageBooster"></div>
+                    <div class="redLaser1"></div>
+                    <div class="redLaser2"></div>
+                    <div class="redLaser3"></div>
+                    <div class="rangeBooster"></div>
+                    <div class="purpleLaser1"></div>
+                    <div class="purpleLaser2"></div>
+                    <div class="purpleLaser3"></div>
+                    <div class="moneyBooster"></div>
+                    <div class="blueLaser1"></div>
+                    <div class="blueLaser2"></div>
+                    <div class="blueLaser3"></div>
+                    <div class="lifeBooster"></div>
+                </div>
+            </div>
+            <div class="secondBox">
+                <div class="header">Information</div>
+                <p class="infoText">move your mouse over a tower to find out more information about that tower</p>
+            </div>
+            <div class="thirdBox"></div>
+            <div class="buttonBox">
+                <div class="quitBox">Quit / Submit</div>
+                <div class="pauseBox">Pause</div>
+            </div>
+        </div>
+
+        <div class="rigtSide">
+        </div>
+    </div>
+    <audio src="Vectorsong.mp3" autoplay></audio>
+</body>
+</html>
+
+<script type="text/javascript" src="game.js"></script>
+<!-- <script type="text/javascript" src="../src/js/target_system.js"></script> -->

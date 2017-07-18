@@ -1,0 +1,500 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+p {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gameConatiner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContainer {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    z-index: 2;
+}
+
+.firstBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 140px;
+    width: 145px;
+    background-color: rgb(4, 28, 28);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(8, 78, 70);
+}
+
+.header {
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+    padding-top: 1px;
+}
+
+.firstBox .header {
+    margin-top: 3px;
+    padding-left: 5px;
+    height: 15px;
+    width: 130px;
+    background-color: rgb(0, 70, 70);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    line-height: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(139, 212, 226);
+}
+
+.towerBox {
+    width: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.g1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 51, 0);
+}
+
+.g1:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 51, 0);
+}
+
+.glno:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 30, 0);
+    background-color: rgb(127, 0, 0);
+}
+
+.greenLaser1 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+.innerLaser {
+    position: relative;
+    left: 7px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 127, 0);
+    border-radius: 50%;
+}
+
+.innerLaserLine {
+    position: relative;
+    top: 5px;
+    left: -7px;
+    transform: rotate(-45deg);
+    width: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 127, 0);
+}
+
+.greenLaser2 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 127, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+.greenLaser3 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 127, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+.damageBooster {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 127);
+    background-color: rgb(51, 51, 51);
+}
+.redLaser1 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 0, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+.redLaser2 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 0, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+.redLaser3 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 0, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+.rangeBooster {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.purpleLaser1 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 0, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.purpleLaser2 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 0, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.purpleLaser3 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 0, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.moneyBooster {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.blueLaser1 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(25, 102, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.blueLaser2 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(25, 102, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.blueLaser3 {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(25, 102, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.lifeBooster {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 127);
+    background-color: rgb(51, 51, 51);
+}
+
+.secondBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 180px;
+    width: 145px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(8, 78, 70);
+    background-color: rgb(4, 28, 28);
+}
+
+.secondBox .header {
+    margin-top: 3px;
+    padding-left: 5px;
+    height: 15px;
+    width: 130px;
+    background-color: rgb(0, 70, 70);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    line-height: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(139, 212, 226);
+}
+
+.infoText {
+    width: 136px;
+    margin: 0px;
+    margin-top: 5px;
+    line-height: 15px;
+    font-size: 12px;
+    color: rgb(204, 204, 204);
+    text-transform: uppercase;
+}
+
+.thirdBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 80px;
+    width: 145px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(8, 78, 70);
+    background-color: rgb(4, 28, 28);
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 30px;
+    width: 147px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+}
+
+.quitBox {
+    height: 28px;
+    width: 90px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(140, 7, 48);
+    background-color: rgb(246, 75, 127);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.pauseBox {
+    height: 28px;
+    width: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(140, 7, 48);
+    background-color: rgb(246, 75, 127);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.rigtSide {
+    height: 396px;
+    width: 300px;
+    background-color: black;
+    z-index: 10;
+}
+
+.mapContainer {
+    margin-left: 10px;
+    min-width: 484px;
+    max-width: 484px;
+    height: 396px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buildable {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(26, 72, 67);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(12, 121, 119);
+}
+
+.road {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(0, 35, 35);
+}
+
+.entry {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(to top, rgb(0, 35, 35) 20%, rgba(0, 135, 0, 1) 80%);
+}
+
+.exit {
+    width: 21px;
+    height: 22px;
+    background: linear-gradient(270deg, rgba(155, 0, 0, 1), rgb(0, 35, 35));
+    border-width: 1px;
+    border-right-style: solid;
+    border-color: rgb(12, 121, 119);
+}
+
+.greenLaserCannon {
+    position: absolute;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    transform-origin: bottom left;
+    box-shadow:
+    -1px 0px 1px green,
+    -3px 0px 3px green,
+    1px 0px 1px green,
+    3px 0px 3px green,
+    0px 0px 1px green,
+    0px 0px 3px green,
+    0px 0px 5px green,
+    0px 0px 7px green,
+    0px 0px 9px green,
+    0px 0px 11px green,
+    0px 0px 13px green,
+    0px 0px 15px green,
+    0px 0px 17px green,
+    0px 0px 19px green;
+}
+
+.none {
+    visibility: none;
+}
+
+audio {
+    visibility: hidden;
+}

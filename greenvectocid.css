@@ -1,0 +1,9 @@
+.greenSquare {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: green;
+}

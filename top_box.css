@@ -1,0 +1,133 @@
+.topBoxContainer {
+    height: 80px;
+    width: 492px;
+    background-color: black;
+    z-index: 2;
+}
+
+.topBox {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 60px;
+    width: 482px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(10, 95, 85);
+    background-color: rgb(5, 20, 20);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topBox_left {
+    flex: 4;
+    /*background-color: lightblue;*/
+}
+
+.topBox_middle {
+    flex: 2;
+    /*background-color: lightpink;*/
+    display: flex;
+    justify-content: center;
+}
+
+.next_wave {
+    padding: 2px 2px;
+    align-self: center;
+    height: 28px;
+    width: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(140, 7, 48);
+    background-color: rgb(246, 75, 127);
+    font-family: 'Orbitron', sans-serif;
+    line-height: 20px;
+    text-align: center;
+}
+
+.next_wave:hover, .quitBox:hover, .pauseBox:hover {
+    background-image: linear-gradient( 135deg, #f64b7f 0%, #8C1BAB 100%);
+}
+.topBox_right {
+    flex: 4;
+    /*background-color: lightyellow;*/
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topBox_left {
+    position: relative;
+}
+.topBox_left .text_container, .text_container_shadow {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.topBox_left p {
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: gold;
+    font-size: 22px;
+}
+
+.text_container p {
+    background: -webkit-linear-gradient(#f6ff00, #131101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.company_name1 {
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.company_name2 {
+    margin: 0;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+
+.text_container_shadow .company_name1, .company_name2 {
+    text-shadow: 2px -4px 7px rgba(246, 255, 0, 0.44);
+}
+
+
+
+.stat_left, .stat_right {
+    flex: 1;
+    margin: 5px 0 5px 5px;
+    border-bottom: 1px solid #05322e;
+    border-right: 1px solid #636363;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stat_left div, .stat_right div {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat_left p, .stat_right p {
+    font-size: 8px;
+    padding-left: 2px;
+    color: white;
+}
+
+.stat_left data, .stat_right data {
+    float: right;
+}
+
+.stat_left .data {
+    margin-right: 1px;
+}
+
+.stat_right {
+    margin: 5px 5px 5px 0;
+    border-right: 0;
+}
