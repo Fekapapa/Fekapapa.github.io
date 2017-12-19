@@ -453,7 +453,7 @@ footer {
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barleft {
-    width: 75%;
+    width: 85%;
     height: 20px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow:
@@ -463,7 +463,7 @@ footer {
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barright {
-    width: 25%;
+    width: 15%;
     height: 20px;
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 3px #000000;
@@ -471,11 +471,11 @@ footer {
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barleft.second {
-    width: 60%;
+    width: 75%;
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barright.second {
-    width: 40%;
+    width: 25%;
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barleft.third {
@@ -627,7 +627,7 @@ footer {
 .resume .bottombox .educationbox {
     margin-bottom: 50px;
     padding: 0px 20px 20px 20px;
-    width: 25%;
+    width: 33%;
     background-color: white;
     text-align: justify;
     line-height: 1.4em;
@@ -1093,4 +1093,8 @@ label a {
     position: fixed;
     width: 100%;
     z-index: 2;
+}
+
+.sectionheader.experience {
+  padding-top: 0;
 }
