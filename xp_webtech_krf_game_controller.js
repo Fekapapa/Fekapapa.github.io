@@ -238,7 +238,7 @@ const GameLogic = (function() {
       }
     }
     //get request when code is on the web
-    xhr.open('GET', ('ferenchartmann.com/' + file));
+    xhr.open('GET', file);
 
     //get request when code is on localhost
     // xhr.open('GET', ('http://localhost:3000/' + file));
