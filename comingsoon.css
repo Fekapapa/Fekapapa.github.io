@@ -259,7 +259,6 @@ footer {
 }
 
 .resume .headerbox .right .agecontainer .leftbox .firstbox {
-    width: 30%;
     min-width: 50px;
     font-weight: bold;
 }
@@ -289,20 +288,21 @@ footer {
 }
 
 .resume .headerbox .right .agecontainer .rightbox .firstbox {
-    width: 30%;
+    width: 25%;
     min-width: 50px;
     font-weight: bold;
 }
 
 @media screen and (max-width: 1300px) {
     .resume .headerbox .right .agecontainer .rightbox .firstbox {
-        min-width: 65px;
+        min-width: 60px;
     }
 }
 
 .resume .headerbox .right .agecontainer .rightbox .secondbox {
     width: 70%;
     min-width: 180px;
+    padding-right: 5px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -471,11 +471,11 @@ footer {
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barleft.second {
-    width: 75%;
+    width: 80%;
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barright.second {
-    width: 25%;
+    width: 20.1%;
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barleft.third {
@@ -487,11 +487,11 @@ footer {
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barleft.fourth {
-    width: 50%;
+    width: 75%;
 }
 
 .resume .midbox .leftbox .skillcontainer .barbox .barright.fourth {
-    width: 50%;
+    width: 25%;
 }
 
 .resume .midbox .rightbox .circlerow {
@@ -503,6 +503,7 @@ footer {
 }
 
 .resume .midbox .rightbox .circlerow .circlecontainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
