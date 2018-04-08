@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  font-family: 'Source Serif Pro', serif;
+  text-align: center; }
+
+textarea {
+  background: none;
+  border: none;
+  color: #646464;
+  display: block;
+  font-family: 'Source Serif Pro', serif;
+  resize: none;
+  outline: none; }
+
+input {
+  border: none; }
+
+.header {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Hi Melody', cursive;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3; }
+
+.footer {
+  background-color: #0a0a0a;
+  color: white;
+  font-size: 12px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3; }
+
+.main-container {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 300px, transparent 450px), -webkit-linear-gradient(top, transparent 300px, #1e1e1e 450px), url(/./todo_react.main_background_mobile.a93e2bd0.jpg);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 300px, transparent 450px), -o-linear-gradient(top, transparent 300px, #1e1e1e 450px), url(/./todo_react.main_background_mobile.a93e2bd0.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 300px, transparent 450px), linear-gradient(to bottom, transparent 300px, #1e1e1e 450px), url(/./todo_react.main_background_mobile.a93e2bd0.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%; }
+  @media screen and (min-width: 768px) {
+    .main-container {
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 400px, transparent 600px), -webkit-linear-gradient(top, transparent 400px, #1e1e1e 600px), url(/./todo_react.main_background_mobile.a93e2bd0.jpg);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 400px, transparent 600px), -o-linear-gradient(top, transparent 400px, #1e1e1e 600px), url(/./todo_react.main_background_mobile.a93e2bd0.jpg);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 400px, transparent 600px), linear-gradient(to bottom, transparent 400px, #1e1e1e 600px), url(/./todo_react.main_background_mobile.a93e2bd0.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%; } }
+  @media screen and (min-width: 992px) {
+    .main-container {
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 400px, transparent 600px), -webkit-linear-gradient(top, transparent 400px, #1e1e1e 600px), url(/./todo_react.main_background.4e85f34c.jpg);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 400px, transparent 600px), -o-linear-gradient(top, transparent 400px, #1e1e1e 600px), url(/./todo_react.main_background.4e85f34c.jpg);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 400px, transparent 600px), linear-gradient(to bottom, transparent 400px, #1e1e1e 600px), url(/./todo_react.main_background.4e85f34c.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%; } }
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  max-width: 992px;
+  min-height: calc(100vh - 120px);
+  padding: 20px 10% 0 10%; }
+  @media screen and (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      padding: 20px 10px 0 10px; } }
+
+.grid-item {
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .grid-item {
+      margin-bottom: 60px; } }
+
+.column-title {
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 3px 3px 0 0;
+  font-family: 'Hi Melody', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 20px; }
+
+.card {
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.33), inset 0 0 10px black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.33), inset 0 0 10px black;
+  min-height: 80px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0;
+  position: relative; }
+
+.todo .card-background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 220, 220, 0.5)), to(rgba(255, 220, 220, 0.5))), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: -webkit-linear-gradient(rgba(255, 220, 220, 0.5), rgba(255, 220, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: -o-linear-gradient(rgba(255, 220, 220, 0.5), rgba(255, 220, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: linear-gradient(rgba(255, 220, 220, 0.5), rgba(255, 220, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png); }
+
+.doing .card-background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 220, 0.5)), to(rgba(255, 255, 220, 0.5))), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: -webkit-linear-gradient(rgba(255, 255, 220, 0.5), rgba(255, 255, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: -o-linear-gradient(rgba(255, 255, 220, 0.5), rgba(255, 255, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: linear-gradient(rgba(255, 255, 220, 0.5), rgba(255, 255, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png); }
+
+.done .card-background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 255, 220, 0.5)), to(rgba(220, 255, 220, 0.5))), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: -webkit-linear-gradient(rgba(220, 255, 220, 0.5), rgba(220, 255, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: -o-linear-gradient(rgba(220, 255, 220, 0.5), rgba(220, 255, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png);
+  background: linear-gradient(rgba(220, 255, 220, 0.5), rgba(220, 255, 220, 0.5)), url(/./todo_react.card_background.7eaf8f8b.png); }
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  height: 25px;
+  overflow: hidden;
+  padding-top: 3px;
+  position: absolute;
+  text-align: right;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 100%;
+  z-index: 2; }
+
+.card-header-menu {
+  margin-right: 25px; }
+
+.card-text {
+  border-radius: 0 0 10px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 35px 10px 10px 10px;
+  text-align: justify; }
+
+.card-textarea {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 20px); }
+
+.card-button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f6f5f0), to(#e1e0dc));
+  background: -webkit-linear-gradient(bottom, #f6f5f0, #e1e0dc);
+  background: -o-linear-gradient(bottom, #f6f5f0, #e1e0dc);
+  background: linear-gradient(to top, #f6f5f0, #e1e0dc);
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.33), inset 0 0 3px #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.33), inset 0 0 3px #000000;
+  color: #6b635b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 20px;
+  padding: 2px 5px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.439); }
+
+.card-button-delete {
+  background: url(/./todo_react.card_close_icon2.37090bb8.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.33);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px; }
+
+.card-invisible {
+  visibility: hidden;
+  pointer-events: none; }
+
+form .card-header {
+  padding-right: 0; }
+
+.card-header-text {
+  color: #e1e0dc;
+  cursor: auto;
+  display: inline-block;
+  font-size: 14px;
+  left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  top: 6px; }
+
+.column-add-card {
+  border-radius: 0 0 3px 3px;
+  cursor: pointer;
+  font-family: 'Hi Melody', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-left: 10px;
+  text-align: left; }
+
+.card-checkbox {
+  display: none; }
+
+.card-status-submenu {
+  color: #e1e0dc;
+  cursor: auto;
+  font-size: 14px;
+  margin-top: 10px;
+  position: absolute;
+  right: 45px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 136px; }
+
+input:checked ~ div.card-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+.card-status-submenu-element {
+  margin-bottom: 5px;
+  margin-right: 0; }
+
+.todo #todo-button, .doing #doing-button, .done #done-button {
+  display: none; }
+
+/*# sourceMappingURL=todo_react.main.58d855d9.css.map*/
