@@ -621,3 +621,7 @@ label a {
     color: black;
     text-align: center;
 }
+
+.project-link {
+  text-decoration: underline;
+}
