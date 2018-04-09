@@ -112,6 +112,7 @@ a {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .image:hover {
